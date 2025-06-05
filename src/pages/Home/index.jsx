@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import PokemonInfo from "../../components/PokemonInfo";
 
 const POKEMON_LIST = [
   { name: 'mimikyu', id: 778 },
@@ -130,6 +131,8 @@ export default function Detalhes() {
   );
 
   return (
+
+    <PokemonInfo pokemon={pokemonData} colors={} onDetailsClick={} />
     <div style={{
       backgroundColor: '#2E8B57',
       minHeight: '100vh',
